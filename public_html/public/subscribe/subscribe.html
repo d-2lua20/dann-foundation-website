@@ -1,0 +1,14 @@
+<form id="subscribeForm" onsubmit="return handleSubscribe(event)">
+  <label for="email">Enter your email to subscribe:</label><br>
+  <input type="email" id="email" name="email" placeholder="example@email.com" required>
+  <button type="submit">Subscribe</button>
+</form>
+
+<script>
+  function handleSubscribe(event) {
+    event.preventDefault();
+    // Save email later with PHP or backend; for now just redirect
+    window.location.href = "thanks.html"; // ✅ Correct relative path
+    return false;
+  }
+</script>
